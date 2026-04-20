@@ -25,27 +25,47 @@ import {
 import { FaUsers, FaCarSide, FaLeaf, FaStar, FaRupeeSign, FaGooglePlay, FaApple } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
 
+// Image Imports
+import review1 from "../../assets/images/review1.jpg";
+import review2 from "../../assets/images/review2.jpg";
+import review3 from "../../assets/images/review3.jpg";
+import carServiceBg from "../../assets/images/car_service_bg.png";
+import fastBooking from "../../assets/images/Fast booking.png";
+import realTracking from "../../assets/images/Real tracking.png";
+import safeVerify from "../../assets/images/Safe and verify.png";
+import multiplePayment from "../../assets/images/multiple-payment.png";
+import affordablePrice from "../../assets/images/Affordable price.png";
+import smartNavigation from "../../assets/images/smart navigation.jfif";
+import ratingReviews from "../../assets/images/rating and reviews.png";
+import offerDiscount from "../../assets/images/offer and discount.png";
+import profileHistory from "../../assets/images/profile and history.png";
+import mobileFindPool from "../../assets/images/mobileImgFindPool.png";
+import mobileCheckIn from "../../assets/images/mobileImgCheckIn.png";
+import mobileMatchingUser from "../../assets/images/mobileImgMatchingUser.png";
+import mobileEndRide from "../../assets/images/mobileImgEndRide.png";
+import mobileCompleted from "../../assets/images/mobileImgCompleted.png";
+
 function Carservices() {
   const navigate = useNavigate();
   const testimonials = [
     {
       name: "Jerome Bell",
       role: "Daily Commuter",
-      image: "/src/assets/images/review1.jpg",
+      image: review1,
       text: "I've been using Dump and Drop for my daily commute, and I'm always impressed by their prompt service and professional drivers.",
       stars: 5
     },
     {
       name: "Sarah Jenkins",
       role: "Business Traveler",
-      image: "/src/assets/images/review2.jpg",
+      image: review2,
       text: "The best ride-hailing experience I've had. The app is intuitive and the cars are always clean and well-maintained.",
       stars: 5
     },
     {
       name: "Michael Chen",
       role: "Urban Explorer",
-      image: "/src/assets/images/review3.jpg",
+      image: review3,
       text: "Safe, reliable, and affordable. Dump and Drop has become my go-to choice for getting around the city quickly.",
       stars: 5
     }
@@ -67,7 +87,7 @@ function Carservices() {
         {/* Professional Full-Bleed Background */}
         <div className="absolute inset-0 z-0">
           <img 
-            src="/src/assets/images/car_service_bg.png" 
+            src={carServiceBg} 
             alt="Premium Ride" 
             className="w-full h-full object-cover transform scale-105"
           />
@@ -136,7 +156,7 @@ function Carservices() {
               {/* Card 1: Fast Ride Booking */}
               <div className="p-10 rounded-[40px] bg-slate-50 border border-slate-100 hover:bg-white hover:shadow-[0_40px_80px_rgba(0,0,0,0.06)] transition-all duration-500 group text-center flex flex-col items-center h-full">
                  <div className="relative mb-8 w-full aspect-[4/3] rounded-3xl overflow-hidden bg-white border border-slate-100 flex items-center justify-center">
-                    <img src="/src/assets/images/Fast booking.png" alt="Fast Booking" className="w-full h-full object-contain p-4 group-hover:scale-110 transition-transform duration-700" />
+                    <img src={fastBooking} alt="Fast Booking" className="w-full h-full object-contain p-4 group-hover:scale-110 transition-transform duration-700" />
                  </div>
                  <h3 className="text-2xl font-black mb-4 group-hover:text-brand-blue transition-colors">Fast Ride Booking</h3>
                  <p className="text-slate-500 text-sm leading-relaxed">Book your taxi instantly with one tap. No waiting, no hassle.</p>
@@ -145,7 +165,7 @@ function Carservices() {
               {/* Card 2: Real-Time Tracking */}
               <div className="p-10 rounded-[40px] bg-slate-50 border border-slate-100 hover:bg-white hover:shadow-[0_40px_80px_rgba(0,0,0,0.06)] transition-all duration-500 group text-center flex flex-col items-center h-full border-b-[6px] border-b-brand-blue">
                  <div className="relative mb-8 w-full aspect-[4/3] rounded-3xl overflow-hidden bg-white border border-slate-100 flex items-center justify-center">
-                    <img src="/src/assets/images/Real tracking.png" alt="Real Tracking" className="w-full h-full object-contain p-4 group-hover:scale-110 transition-transform duration-700" />
+                    <img src={realTracking} alt="Real Tracking" className="w-full h-full object-contain p-4 group-hover:scale-110 transition-transform duration-700" />
                  </div>
                  <h3 className="text-2xl font-black mb-4 group-hover:text-brand-blue transition-colors">Real-Time Tracking</h3>
                  <p className="text-slate-500 text-sm leading-relaxed">Track your ride live on the map from pickup to drop-off.</p>
@@ -154,7 +174,7 @@ function Carservices() {
               {/* Card 3: Safe & Verified Drivers */}
               <div className="p-10 rounded-[40px] bg-slate-50 border border-slate-100 hover:bg-white hover:shadow-[0_40px_80px_rgba(0,0,0,0.06)] transition-all duration-500 group text-center flex flex-col items-center h-full">
                  <div className="relative mb-8 w-full aspect-[4/3] rounded-3xl overflow-hidden bg-white border border-slate-100 flex items-center justify-center">
-                    <img src="/src/assets/images/Safe and verify.png" alt="Safe and Verify" className="w-full h-full object-contain p-4 group-hover:scale-110 transition-transform duration-700" />
+                    <img src={safeVerify} alt="Safe and Verify" className="w-full h-full object-contain p-4 group-hover:scale-110 transition-transform duration-700" />
                  </div>
                  <h3 className="text-2xl font-black mb-4 group-hover:text-brand-blue transition-colors">Safe & Verified Drivers</h3>
                  <p className="text-slate-500 text-sm leading-relaxed">Every driver is background-checked and trained for customer safety.</p>
@@ -165,7 +185,7 @@ function Carservices() {
               {/* Card 4: Multiple Payment Options */}
               <div className="p-10 rounded-[40px] bg-slate-50 border border-slate-100 hover:bg-white hover:shadow-[0_40px_80px_rgba(0,0,0,0.06)] transition-all duration-500 group text-center flex flex-col items-center h-full">
                  <div className="relative mb-8 w-full aspect-[4/3] rounded-3xl overflow-hidden bg-white border border-slate-100 flex items-center justify-center">
-                    <img src="/src/assets/images/multiple-payment.png" alt="Payments" className="w-full h-full object-contain p-4 group-hover:scale-110 transition-transform duration-700" />
+                    <img src={multiplePayment} alt="Payments" className="w-full h-full object-contain p-4 group-hover:scale-110 transition-transform duration-700" />
                  </div>
                  <h3 className="text-2xl font-black mb-4 group-hover:text-brand-blue transition-colors">Multiple Payment Options</h3>
                  <p className="text-slate-500 text-sm leading-relaxed">Pay with cash, card, wallet, or UPI — whatever suits you best.</p>
@@ -174,7 +194,7 @@ function Carservices() {
               {/* Card 5: Affordable & Transparent Pricing */}
               <div className="p-10 rounded-[40px] bg-slate-50 border border-slate-100 hover:bg-white hover:shadow-[0_40px_80px_rgba(0,0,0,0.06)] transition-all duration-500 group text-center flex flex-col items-center h-full">
                  <div className="relative mb-8 w-full aspect-[4/3] rounded-3xl overflow-hidden bg-white border border-slate-100 flex items-center justify-center">
-                    <img src="/src/assets/images/Affordable price.png" alt="Pricing" className="w-full h-full object-contain p-4 group-hover:scale-110 transition-transform duration-700" />
+                    <img src={affordablePrice} alt="Pricing" className="w-full h-full object-contain p-4 group-hover:scale-110 transition-transform duration-700" />
                  </div>
                  <h3 className="text-2xl font-black mb-4 group-hover:text-brand-blue transition-colors">Affordable & Transparent Pricing</h3>
                  <p className="text-slate-500 text-sm leading-relaxed">No hidden charges. See your fare estimate before confirming the ride.</p>
@@ -203,7 +223,7 @@ function Carservices() {
             <div className="flex flex-col items-center text-center group">
               <div className="w-24 h-24 bg-white rounded-[32px] flex items-center justify-center mb-8 shadow-sm border border-slate-100 overflow-hidden transform transition-all duration-500 group-hover:scale-110">
                 <img 
-                  src="/src/assets/images/smart navigation.jfif" 
+                  src={smartNavigation} 
                   alt="Smart Navigation" 
                   className="w-full h-full object-contain p-2"
                 />
@@ -216,7 +236,7 @@ function Carservices() {
             <div className="flex flex-col items-center text-center group">
               <div className="w-24 h-24 bg-white rounded-[32px] flex items-center justify-center mb-8 shadow-sm border border-slate-100 overflow-hidden transform transition-all duration-500 group-hover:scale-110">
                 <img 
-                  src="/src/assets/images/rating and reviews.png" 
+                  src={ratingReviews} 
                   alt="Ratings & Reviews" 
                   className="w-full h-full object-contain p-2"
                 />
@@ -229,7 +249,7 @@ function Carservices() {
             <div className="flex flex-col items-center text-center group">
               <div className="w-24 h-24 bg-white rounded-[32px] flex items-center justify-center mb-8 shadow-sm border border-slate-100 overflow-hidden transform transition-all duration-500 group-hover:scale-110">
                 <img 
-                  src="/src/assets/images/offer and discount.png" 
+                  src={offerDiscount} 
                   alt="Offers & Discounts" 
                   className="w-full h-full object-contain p-2"
                 />
@@ -242,7 +262,7 @@ function Carservices() {
             <div className="flex flex-col items-center text-center group">
               <div className="w-24 h-24 bg-white rounded-[32px] flex items-center justify-center mb-8 shadow-sm border border-slate-100 overflow-hidden transform transition-all duration-500 group-hover:scale-110">
                 <img 
-                  src="/src/assets/images/profile and history.png" 
+                  src={profileHistory} 
                   alt="Profile & History" 
                   className="w-full h-full object-contain p-2"
                 />
@@ -358,7 +378,7 @@ function Carservices() {
             <div className="flex flex-col items-center text-center group">
               <div className="relative mb-10 w-full aspect-[3/4] rounded-[40px] bg-white border border-slate-100 shadow-sm overflow-hidden p-4 group-hover:shadow-xl transition-all duration-500">
                 <img 
-                  src="/src/assets/images/mobileImgFindPool.png" 
+                  src={mobileFindPool} 
                   alt="Select Pickup" 
                   className="w-full h-full object-contain group-hover:scale-110 transition-transform duration-700" 
                 />
@@ -373,7 +393,7 @@ function Carservices() {
             <div className="flex flex-col items-center text-center group">
               <div className="relative mb-10 w-full aspect-[3/4] rounded-[40px] bg-white border border-slate-100 shadow-sm overflow-hidden p-4 group-hover:shadow-xl transition-all duration-500">
                 <img 
-                  src="/src/assets/images/mobileImgCheckIn.png" 
+                  src={mobileCheckIn} 
                   alt="Choose Ride" 
                   className="w-full h-full object-contain group-hover:scale-110 transition-transform duration-700" 
                 />
@@ -388,7 +408,7 @@ function Carservices() {
             <div className="flex flex-col items-center text-center group">
               <div className="relative mb-10 w-full aspect-[3/4] rounded-[40px] bg-white border border-slate-100 shadow-sm overflow-hidden p-4 group-hover:shadow-xl transition-all duration-500">
                 <img 
-                  src="/src/assets/images/mobileImgMatchingUser.png" 
+                  src={mobileMatchingUser} 
                   alt="Matched with Driver" 
                   className="w-full h-full object-contain group-hover:scale-110 transition-transform duration-700" 
                 />
@@ -403,7 +423,7 @@ function Carservices() {
             <div className="flex flex-col items-center text-center group">
               <div className="relative mb-10 w-full aspect-[3/4] rounded-[40px] bg-white border border-slate-100 shadow-sm overflow-hidden p-4 group-hover:shadow-xl transition-all duration-500">
                 <img 
-                  src="/src/assets/images/mobileImgEndRide.png" 
+                  src={mobileEndRide} 
                   alt="Track Arrive Safely" 
                   className="w-full h-full object-contain group-hover:scale-110 transition-transform duration-700" 
                 />
@@ -471,7 +491,7 @@ function Carservices() {
             <div className="flex-1 relative group">
               <div className="relative z-10 animate-float">
                  <img 
-                    src="/src/assets/images/mobileImgCompleted.png" 
+                    src={mobileCompleted} 
                     alt="App Preview" 
                     className="w-[320px] md:w-[450px] mx-auto drop-shadow-[0_50px_80px_rgba(0,0,0,0.5)] transform transition-transform duration-700 group-hover:scale-110" 
                  />
