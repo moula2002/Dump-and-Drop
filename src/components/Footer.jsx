@@ -48,25 +48,29 @@ function Footer() {
             <ul className="space-y-4">
               <li><Link to="/" className="text-slate-400 hover:text-white font-black text-sm transition-colors uppercase tracking-widest">Car Pooling</Link></li>
               <li><Link to="/goodsservices" className="text-slate-400 hover:text-white font-black text-sm transition-colors uppercase tracking-widest">Goods Delivery</Link></li>
-              <li><Link to="/carservices" className="text-slate-400 hover:text-white font-black text-sm transition-colors uppercase tracking-widest">Car Services</Link></li>
               <li><Link to="/driverquickride" className="text-slate-400 hover:text-white font-black text-sm transition-colors uppercase tracking-widest">Driver Quick Ride</Link></li>
             </ul>
           </div>
 
           {/* Company - Span 2 */}
           <div className="lg:col-span-2 space-y-8">
-            <h4 className="text-xs font-black text-[#00AFF5] uppercase tracking-[0.2em]">Company</h4>
+            <h4 className="text-xs font-black text-[#00AFF5] uppercase tracking-[0.2em]">Legal</h4>
             <ul className="space-y-4">
+              <li><Link to="/privacy-policy" className="text-slate-400 hover:text-white font-black text-sm transition-colors uppercase tracking-widest">Privacy Policy</Link></li>
+              <li><Link to="/terms-of-service" className="text-slate-400 hover:text-white font-black text-sm transition-colors uppercase tracking-widest">Terms of Service</Link></li>
+              <li><Link to="/cancellation" className="text-slate-400 hover:text-white font-black text-sm transition-colors uppercase tracking-widest">Cancellation</Link></li>
               <li><Link to="/about" className="text-slate-400 hover:text-white font-black text-sm transition-colors uppercase tracking-widest">About Us</Link></li>
               <li><Link to="/blog" className="text-slate-400 hover:text-white font-black text-sm transition-colors uppercase tracking-widest">Blog</Link></li>
-              <li><Link to="/contact" className="text-slate-400 hover:text-white font-black text-sm transition-colors uppercase tracking-widest">Contact Us</Link></li>
-              <li><Link to="/help" className="text-slate-400 hover:text-white font-black text-sm transition-colors uppercase tracking-widest">Help & Support</Link></li>
             </ul>
           </div>
 
           {/* Contact Info - Span 4 */}
           <div className="lg:col-span-4 space-y-8">
-            <h4 className="text-xs font-black text-[#00AFF5] uppercase tracking-[0.2em]">Regional Support</h4>
+            <h4 className="text-xs font-black text-[#00AFF5] uppercase tracking-[0.2em]">Support Desk</h4>
+            <ul className="flex gap-8 mb-4">
+              <li><Link to="/contact" className="text-slate-400 hover:text-white font-black text-xs transition-colors uppercase tracking-widest">Contact Us</Link></li>
+              <li><Link to="/help" className="text-slate-400 hover:text-white font-black text-xs transition-colors uppercase tracking-widest">Help Center</Link></li>
+            </ul>
             <div className="space-y-6">
               <div className="flex items-start gap-4 p-5 bg-slate-900/50 rounded-2xl border border-slate-900">
                 <Phone size={20} className="text-[#00AFF5] mt-1" />
